@@ -1,5 +1,5 @@
 {
-  "name": "resizeify",
+  "name": "AfterResizeMe",
   "version": "0.0.1",
   "description": "A Native JavaScript AfterResize Event",
   "jshintConfig": {
@@ -13,6 +13,6 @@
   },
   "dependencies": {},
   "scripts": {
-    "build": "gulp"
+    "test": "node jasmine/testrunner.js"
   }
 }

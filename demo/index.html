@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>After Resize</title>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' type='text/css' href='main.css'>
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <script src='../src/afterresize.js'></script>
+        <script type='text/javascript'>
+
+            document.addEventListener('DOMContentLoaded', function() {
+
+                var contentDiv = document.querySelector('.resize-status');
+
+                window.addEventListener('afterresize', function() {
+                    contentDiv.innerHTML = 'I\'m not even being resized right now';
+                }, {delay: 300});
+
+                window.addEventListener('resize', function() {
+                    contentDiv.innerHTML = 'Whoa! Totally being resized right now.';
+                });
+
+
+                //just page stuff -- you don't need this
+
+                document.querySelector('#github').addEventListener('click', function(){
+                    location.href = 'http://github.com/bencripps/afterresizeme';
+                });
+
+                document.querySelector('#about').addEventListener('click', function(){
+                    location.href = 'http://www.benjamincripps.com';
+                });
+
+
+            });
+
+        </script>
+    </head>
+    <body>
+
+
+
+        <div class='container'>
+    
+            <header>
+                <h1>AfterResizeMe</h1>
+                <h2>A Native JavaScript Event Library</h2>
+            </header>
+
+            <div class='resize-status'>Resize me, I dare you</div>    
+
+            <div class="code">
+                <pre>
+                    window.addEventListener('afterresize', function() {
+                        someDiv.innerHTML = 'I\'m not even being resized right now';
+                    }, {delay: 300});
+                </pre>
+            </div>
+
+            <div class='actions'>
+                <button id='github'>GitHub</button>
+                <button id='about'>About Me</button>
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+html, body {
+    background-color: #FF9999;
+}
+
+
+.container {
+    margin: 0px auto;
+    width: 80%;
+
+    header {
+       font-family: 'Trebuchet MS', Helvetica, sans-serif;
+       h1 {
+            font-size: 36px;
+       }
+       h2 {
+            font-size: 20px;
+       }
+    }
+
+    .resize-status {
+        font-family: 'Indie Flower', cursive;
+        font-size: 45px;
+        padding: 40px 0 40px 0;
+        text-align: center;
+    }
+
+    .code > pre {
+
+        background-color: #FFD6D6;
+        border-radius: 2px;
+        padding: 10px;
+        margin: 0px auto;
+        overflow-x: auto;
+        width: 80%;
+    }
+
+    .actions {
+        text-align: center;
+        button {
+            background-color: #d6ffff;
+            border-radius: 2px;
+            box-shadow:0px;
+            border: none;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 14px;
+            margin: 60px 20px 20px 20px;
+            padding: 20px;
+            transform: scale(1.00);
+            transition: transform, box-shadow;
+            transition-duration: .1s;
+            transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+
+            &:hover {
+                box-shadow: 10px 10px 60px -4px rgba(0,0,0,0.75);
+                transform: scale(1.15);
+            }
+        }
+    }
+
+}
