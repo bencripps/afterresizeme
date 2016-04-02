@@ -1,5 +1,7 @@
 # AfterResizeMe
 
+[![Build Status](https://travis-ci.org/bencripps/react-redux-grid.svg?branch=master)](https://travis-ci.org/bencripps/react-redux-grid)
+
 ### A Native JavaScript Event Library
 
 Ever wanted to fire an event after a resize event has completed? Well now you can.
